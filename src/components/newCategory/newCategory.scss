@@ -1,0 +1,86 @@
+@import '../../mixin.scss';
+
+.category {
+    &-header {
+        margin: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $color-3;
+    }
+
+
+    &-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: $color-3;
+    }
+
+
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        margin: 10px 5px;
+        color: $color-3;
+    }
+
+    &-field {
+        background: none;
+        outline: none;
+        border: none;
+        color: $color-0;
+        font-family: 'Roboto';
+        font-size: 18px;
+        margin-left: 20px;
+        width: 100%;
+        text-align: right;
+        height: 36px;
+    }
+
+    &-tick {
+        border: none;
+        background: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &-option {
+        background: lightslategrey;
+    }
+
+    &-select {
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border: 0 !important;
+        background: none;
+        flex: 1;
+        padding: 0 .5em;
+        color: $color-0;
+        cursor: pointer;
+        font-family: 'Roboto';
+        font-style: normal;
+        @include font-style_main();
+        margin-bottom: -26px;
+        margin-left: -2px;
+    }
+}
+
+.divider {
+    background-color: $color-0;
+}
+
+@media screen and (min-width: 768px) {
+    .category-item {
+        width: 50%;
+        margin: auto;
+    }
+}
