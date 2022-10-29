@@ -1,3 +1,26 @@
+#CashFlow - Приложение для учета финансов, с возможностью регистрации, добавления и удаления своих доходов/расходов, также добавления новых категорий, отображение данных на диаграмме и возможностью фильтрации их по датам, реализовано, работая в команде c https://github.com/martynov-a-d и https://github.com/JPoznyak по методологии Agile Scrum.
+
+Отличается от других подобных приложений простотой использования и лаконичностью, понятным интерфейсом, не нагроможденным большим количеством данных. В проекте были использованы следующие технологии: GitHub, Trello, Telegramm, Discord, Zoom (коммуникация), Firebase (хранение данных), JS, TypeScript, React, MUI material, React datepicker, Redux, Chart.js.
+
+Ссылка на доску Trello: https://trello.com/b/Na0D0YkC/scrum-project. Ссылка на Firebase: https://console.firebase.google.com/project/cash-flow-gb/database/cash-flow-gb-default-rtdb/data.
+
+В проекте мной сделано:
+
+Страница Sign Up (компонент SignUp.tsx)
+Меню практически на каждой странице с переходами по страницам приложения
+На главной странице switcher кнопка "C" с функцией удаления всей информации из поля ввода
+На главной странице добавлена меняющаяся иконка выбора категории, при нажатии на которую, открывается список категорий
+На странице addcategory добавлена строка с переключающимся выбором типа категории (Expences/Income)
+Верхняя часть страницы report, где при нажатии на одну из трех кнопок меняется значение на текущий день, месяц или год
+Страница history - календарь с возможностью выбора диапазона дат
+Страница history - совместными усилиями отображение данных из realtime database Firebase ('UserData')
+Подключение realtime database Firebase
+Авторизация и хранение данных пользователей в Firebase
+В Firebase добавлен массив CategoriesList и совместными усилиями его отображение в приложении (на главной странице при нажатии на иконку "Дом" открывается список категорий
+На странице addcategory функция добавления новой категории в Firebase (массив CategoriesList) и отображение на главной странице списка категорий, включающего добавленную
+На главной странице добавлена иконка календаря с возможностью выбора даты и ее записи в Firebase
+На главной странице вся логика добавления расхода/дохода пользователя (dataId, date, img, inputValue, typeId) в Firebase (массив UserData).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -17,30 +40,9 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
