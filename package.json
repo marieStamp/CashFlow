@@ -2,7 +2,7 @@
   "name": "cash_flow",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mariestamp.github.io/CashFlow/",
+  
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
@@ -41,8 +41,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build"
+     "deploy": "gh-pages -d build",
+     "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
