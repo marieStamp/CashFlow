@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/CashFlow/static/css/main.ea61ecd5.css",
+    "main.js": "/CashFlow/static/js/main.030b6acb.js",
+    "static/media/img-main.png": "/CashFlow/static/media/img-main.64b410c53c4f09c79d68.png",
+    "index.html": "/CashFlow/index.html",
+    "main.ea61ecd5.css.map": "/CashFlow/static/css/main.ea61ecd5.css.map",
+    "main.030b6acb.js.map": "/CashFlow/static/js/main.030b6acb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea61ecd5.css",
+    "static/js/main.030b6acb.js"
+  ]
+}
