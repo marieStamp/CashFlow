@@ -9,11 +9,16 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Menu } from "../Menu/Menu";
 import { useNavigate } from "react-router-dom";
+import reportImg from "../../images/report1.png";
+import calendarImg from "../../images/calendar-v2.png";
+import categoryOk from "../../images/category-ok.png";
+import backArrowImg from "../../images/Icons/back_arrow.png";
+import houseImg from "../../images/Icons/house.png";
 
 export const KeyBoard = () => {
   const [typeId, setTypeId] = useState<"Expenses" | "Income">("Expenses");
   const [inputValue, setInputValue] = useState("");
-  const [img, setImg] = useState('images/Icons/house.png');
+  const [img, setImg] = useState(houseImg);
   const [view, setView] = useState(false);
   const [startDate, setStartDate] = useState<any>(new Date());
 
@@ -52,7 +57,7 @@ export const KeyBoard = () => {
     set(ref(db, `UserData/${dataId}`), { dataId, inputValue, img, date, typeId });
     console.log("added to firebase");
     setInputValue("");
-    setImg("images/Icons/house.png");
+    setImg(houseImg);
     setTypeId("Expenses");
     setStartDate(new Date());
   };
@@ -66,7 +71,7 @@ export const KeyBoard = () => {
           <div className="report-icon">
             <img
               className="report-icon"
-              src="../images/report1.png"
+              src={reportImg}
               alt=""
               onClick={() => {
                 navigate("/report");
@@ -104,7 +109,7 @@ export const KeyBoard = () => {
                 dateFormat="dd-MM-yyyy"
                 withPortal
               />
-              <img className="keyboardCalendar" src="images/calendar-v2.png" alt="calendar"></img>
+              <img className="keyboardCalendar" src={calendarImg} alt="calendar"></img>
             </label>
             <img className="keyboardImg" src={img} alt="icon"
               onClick={() => {
@@ -112,7 +117,7 @@ export const KeyBoard = () => {
               }}>
             </img>
             <IconButton onClick={writeToDatabase}>
-              <img className="category-tick" src="images/category-ok.png" alt="ok">
+              <img className="category-tick" src={ categoryOk } alt="ok">
               </img>
             </IconButton>
           </div>
@@ -151,7 +156,7 @@ export const KeyBoard = () => {
               0
             </button>
             <div className="keybrd-btn" onClick={deleteValue}>
-              <img className="img-btn" src="../images/Icons/back_arrow.png" alt="" />
+              <img className="img-btn" src={ backArrowImg } alt="" />
             </div>
           </div>
         </form>

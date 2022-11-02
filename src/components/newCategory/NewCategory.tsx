@@ -8,12 +8,14 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import IconButton from '@mui/material/IconButton';
 import Divider from '@mui/material/Divider';
 import { Icons } from './Icons';
-import './newCategory.scss'
+import './newCategory.scss';
+import defaultIconImg from "../../images/Icons/default-icon.png";
+import categoryOk from "../../images/category-ok.png";
 
 const AddCategory = () => {
 
   const [name, setName] = useState('');
-  const [img, setImg] = useState('images/Icons/default-icon.png');
+  const [img, setImg] = useState(defaultIconImg);
   const [typeId, setTypeId] = useState('Expenses');
   const [view, setView] = useState(false);
 
@@ -44,7 +46,7 @@ const AddCategory = () => {
     console.log("added to firebase");
     setName("");
     setTypeId('Expenses');
-    setImg('images/Icons/default-icon.png');
+    setImg(defaultIconImg);
   };
 
   const navigate = useNavigate();
@@ -59,7 +61,7 @@ const AddCategory = () => {
       </IconButton>    
       <h2>New Category</h2>
       <IconButton onClick={handleSubmit}>
-          <img className="category-tick" src="images/category-ok.png" alt="ok">
+          <img className="category-tick" src={ categoryOk } alt="ok">
           </img>
       </IconButton>
     </div>  

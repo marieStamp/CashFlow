@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 import "./category.scss";
 import IconButton from '@mui/material/IconButton';
 import { store } from '../store';
-
+import addCategoryImg from "../../images/Icons/add_cat.png";
 
 interface PropsType {
     typeId: any;
@@ -14,6 +14,7 @@ const Categories: React.FC<PropsType> = (props) => {
     const navigate = useNavigate();
 
     const categoriesList: any = store.getState().categories.categoriesList
+
     /**
      * Фильтрация категорий
      */
@@ -43,7 +44,7 @@ const Categories: React.FC<PropsType> = (props) => {
                 <IconButton onClick={() => {
                     navigate("/addcategory")
                 }}>
-                    <img className="add-icon" src="../images/Icons/add_cat.png" alt="">
+                    <img className="add-icon" src={ addCategoryImg } alt="">
                     </img>
                 </IconButton>
             </div>

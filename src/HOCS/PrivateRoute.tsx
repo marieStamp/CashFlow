@@ -6,5 +6,5 @@ import React from "react";
 export const PrivateRoute = ({ children }: any) => {
   const authed = useSelector(selectAuth);
 
-  return authed ? children : <Navigate to="/" replace />;
+  return authed ? children : <Navigate to="/CashFlow" replace />;
 };
