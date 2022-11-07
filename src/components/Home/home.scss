@@ -34,6 +34,7 @@ input {
     @include buttonSet();
     background-color: transparent;
     border: none;
+    outline: none;
     border-radius: 0;
     color: $color-3;
 }
@@ -72,8 +73,10 @@ input:-webkit-autofill:focus {
         width: 40px;
     }
     .authError {
-        color: red;
+        color: darkred;
         text-align: center;
+        padding: 30px;
+        font-size: 20pt;
     }
     .signupHeader {
         display: flex;

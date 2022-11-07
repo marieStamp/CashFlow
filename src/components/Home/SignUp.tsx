@@ -31,7 +31,7 @@ export const SignUp = () => {
     <div id="homeComponent">
       <div className="signupHeader">
       <IconButton className="signupArrow" onClick={() => {
-                    navigate("/")}}>  
+                    navigate("/CashFlow")}}>  
                 <ArrowBackIosIcon className='arrowBack'></ArrowBackIosIcon>
             </IconButton> 
             <h1>CashFlow</h1>

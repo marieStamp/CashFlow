@@ -104,6 +104,7 @@ summary::-webkit-details-marker {
     color: $color-0;
     margin-bottom: 8px;
     border: none;
+    outline: none;
 }
 
 .input-amount::placeholder {
@@ -171,19 +172,19 @@ summary::-webkit-details-marker {
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
     .input-amount {
-        width: 30vw;
+        width: 120px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1438px) {
     .input-amount {
-        width: 13vw;
+        width: 120px;
     }
 }
 
 @media screen and (min-width: 1439px) and (max-width: 1919px) {
     .input-amount {
-        width: 9vw;
+        width: 120px;
     }
 
     .keyboardField {
@@ -193,7 +194,7 @@ summary::-webkit-details-marker {
 
 @media screen and (min-width: 1920px) {
     .input-amount {
-        width: 5vw;
+        width: 120px;
     }
 
     .keyboardField {
