@@ -1,5 +1,7 @@
 #CashFlow - Приложение для учета финансов, с возможностью регистрации, добавления и удаления своих доходов/расходов, также добавления новых категорий, отображение данных на диаграмме и возможностью фильтрации их по датам, реализовано, работая в команде c https://github.com/martynov-a-d и https://github.com/JPoznyak по методологии Agile Scrum.
 
+Посмотреть на Github Pages: https://mariestamp.github.io/CashFlow/.
+
 Отличается от других подобных приложений простотой использования и лаконичностью, понятным интерфейсом, не нагроможденным большим количеством данных. В проекте были использованы следующие технологии: GitHub, Trello, Telegramm, Discord, Zoom (коммуникация), Firebase (хранение данных), JS, TypeScript, React, MUI material, React datepicker, Redux, Chart.js.
 
 Ссылка на доску Trello: https://trello.com/b/Na0D0YkC/scrum-project. Ссылка на Firebase: https://console.firebase.google.com/project/cash-flow-gb/database/cash-flow-gb-default-rtdb/data.
